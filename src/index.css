@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+@layer components {
+  .link {
+    @apply cursor-pointer hover:underline;
+  }
+  .button-outline {
+    background-color: #D7DF7F;
+    border: 2px solid #D7DF7F;
+    color: #0D2F3A; /* or white, depending on preference */
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .button-outline:hover {
+    background-color: #0D2F3A;
+    color: #D7DF7F;
+  }
+}
+.hover\:pause-animation:hover {
+  animation-play-state: paused;
+}
+body {
+  scroll-behavior: smooth;
+}
+
