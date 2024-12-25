@@ -12,7 +12,7 @@ const Contact = () => {
                 Let's collaborate on your upcoming cab ride.
               </h1>
               <p className="text-gray-400">
-                Turn your everyday commute into a shared journey with WayGo.
+                Turn your everyday commute into a shared journey with Pool&Go.
                 Connect with fellow travelers, save on costs, and enjoy a more
                 social and sustainable way to travel.
               </p>

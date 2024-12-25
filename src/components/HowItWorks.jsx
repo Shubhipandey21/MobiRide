@@ -33,7 +33,7 @@ const HowItWorks = () => {
                   SignUp
                 </h3>
                 <p className="text-gray-600 mt-4 dark:text-gray-300">
-                  Open the website and sign up. Signing up is easy and takes just a few moments. You'll need to provide basic details, verify your email, and create a secure password. Make sure to use a unique password for added security!
+                  Download the app and sign up. Signing up is easy and takes just a few moments. You'll need to provide basic details, verify your email, and create a secure password. Make sure to use a unique password for added security!
                 </p>
               </div>
               <motion.div
