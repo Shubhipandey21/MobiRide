@@ -3,7 +3,6 @@ import CarVideo from "../../assets/HeroVideo.mp4";
 import AOS from "aos";
 import Typewriter from "typewriter-effect";
 
-
 const Hero = ({ theme }) => {
   useEffect(() => {
     AOS.refresh();
@@ -11,35 +10,32 @@ const Hero = ({ theme }) => {
 
   return (
     <>
-    
-     <div
-      className={`duration-300 relative h-full ${
-        theme === "dark" ? "bg-black text-white" : "bg-white text-black"
-      }`}
-      style={{ minHeight: "620px" }}
-    >
-      {/* Background Video */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src={CarVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Overlay for gradient or dimming effect */}
       <div
-        className="absolute inset-0 bg-black opacity-70"
-        style={theme === "dark" ? { opacity: 0.7 } : { opacity: 0.7 }}
-      ></div>
+        className={`duration-300 relative h-full ${
+          theme === "dark" ? "bg-black text-white" : "bg-white text-black"
+        }`}
+        style={{ minHeight: "620px" }}
+      >
+        {/* Background Video */}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src={CarVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-      {/* Content Section */}
-      <div className="relative z-12 container flex items-center justify-end min-h-[620px]">
-        
-        
+        {/* Overlay for gradient or dimming effect */}
+        <div
+          className="absolute inset-0 bg-black opacity-70"
+          style={theme === "dark" ? { opacity: 0.7 } : { opacity: 0.7 }}
+        ></div>
+
+        {/* Content Section */}
+        <div className="relative z-12 container flex items-center justify-end min-h-[620px]">
           {/* Text Content */}
           <div
             className="space-y-5 text-left sm:pr-10 max-w-[600px]"
@@ -85,16 +81,19 @@ const Hero = ({ theme }) => {
               }`}
               data-aos="fade-up"
               data-aos-delay="1500"
-              onClick={() => AOS.refreshHard()}
+              onClick={() => {
+                const aboutSection = document.getElementById("about");
+                if (aboutSection) {
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               Get Started
             </button>
           </div>
         </div>
       </div>
-   
     </>
-   
   );
 };
 

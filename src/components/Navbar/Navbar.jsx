@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BiSolidSun, BiSolidMoon } from "react-icons/bi";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
+import PoolGoLogo from '../../assets/pool go.svg';
 
 export const Navlinks = [
   { id: 1, name: "HOME", link: "#" },
@@ -27,7 +28,7 @@ const Navbar = ({ theme, setTheme }) => {
       <div className="container py-2 md:py-0">
         <div className="flex justify-between items-center">
           <div>
-            <span className="text-3xl font-bold font-serif">MobiRide</span>
+            <img src={PoolGoLogo} alt="Logo" className="w-32 h-auto p-3" />
           </div>
           <nav className="hidden md:block">
             <ul className="flex items-center gap-8">

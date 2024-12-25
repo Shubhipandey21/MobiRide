@@ -1,6 +1,6 @@
 import React from "react";
-import AboutImgLight from "../../assets/AboutusLight.png";
-import AboutImgDark from "../../assets/AboutusDark.png";
+import AboutImgLight from "../../assets/AboutLight.png";
+import AboutImgDark from "../../assets/AboutDark.png";
 
 const About = () => {
   return (

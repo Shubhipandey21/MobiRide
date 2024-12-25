@@ -9,7 +9,7 @@ import {
 
 // Import app store images
 import AppDownloadImg from '../../assets/appDownloadimg.png'; // Replace with actual path to your Google Play image
-
+import PoolGoLogo from '../../assets/pool go.svg';
 
 const FooterLinks = [
   {
@@ -37,20 +37,18 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 py-5">
           {/* Company Details */}
           <div className="py-8 px-4">
-            <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3 font-serif">
-              MobiRide
-            </h1>
+          <img src={PoolGoLogo} alt="Logo" className="w-32 h-auto p-3" />
             <p className="text-sm">
               Your Ride, Your Way – Affordable, Convenient, and Connected
             </p>
             <br />
             <div className="flex items-center gap-3">
               <FaLocationArrow />
-              <p>Noida, Uttar Pradesh</p>
+              <p>D-553 GF PUL PRAHLAD PUR NEW DELHI - 110044</p>
             </div>
             <div className="flex items-center gap-3 mt-3">
               <FaMobileAlt />
-              <p>+91 123456789</p>
+              <p>+91 87503 94791</p>
             </div>
             {/* Social Handles */}
             <div className="flex items-center gap-3 mt-6">
